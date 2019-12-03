@@ -6,9 +6,12 @@ import Followers from "./components/Followers"
 function App() {
   return (
     <div>
-      <h1>github usercard</h1>
-      <User />
-      <Followers />
+      <h1>Github Usercard</h1>
+      <div className="container">
+        <User />
+        <Followers />
+      </div>
+
     </div>
   );
 }

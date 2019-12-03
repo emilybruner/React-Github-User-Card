@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserCard = (props) => {
     return (
-        <div>
+        <div className="usercard">
             <img src={props.img} alt="user profilepic" />
             <p>Name: {props.user}</p>
             <p>Location: {props.location}</p>
