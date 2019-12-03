@@ -1,11 +1,10 @@
 import React from 'react'
 
-const FollowersCard = (props) => {
+const FollowersCard = ({ followers, img, bio }) => {
     return (
         <div>
-            <img src={props.img} alt="user" />
-            <p>Name: {props.login}</p>
-            <p>Bio {props.bio}</p>
+            <img src={img} alt="user" />
+            <p>Name: {followers}</p>
         </div>
     )
 }

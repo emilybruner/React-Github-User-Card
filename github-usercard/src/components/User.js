@@ -27,7 +27,7 @@ class User extends React.Component {
     render() {
         return (
             <div>
-                <UserCard user={this.state.name} img={this.state.img} location={this.state.location} profile={this.state.html_url} followers={this.state.followers} following={this.state.following} bio={this.state.bio} />
+                <UserCard user={this.state.name} img={this.state.img} location={this.state.location} followers={this.state.followers} following={this.state.following} bio={this.state.bio} />
             </div>
         );
     }

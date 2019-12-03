@@ -24,11 +24,10 @@ class Followers extends React.Component {
             <div>
                 {this.state.followers.map(follower => (
                     <FollowersCard
-                        key={this.state.id}
-                        img={this.state.img}
-                        name={this.state.login}
-                        followers={this.state.followers_url}
-                        bio={this.state.bio}
+                        key={follower.id}
+                        img={follower.avatar_url}
+                        followers={follower.login}
+
                     />
                 ))}
             </div>
