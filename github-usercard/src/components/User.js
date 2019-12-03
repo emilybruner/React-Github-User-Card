@@ -10,6 +10,7 @@ class User extends React.Component {
     componentDidMount() {
         axios.get('https://api.github.com/users/emilybruner')
             .then(response => {
+                console.log('user info', response.data)
                 this.setState({
                     name: response.data.name,
                     img: response.data.avatar_url,
@@ -26,7 +27,7 @@ class User extends React.Component {
     render() {
         return (
             <div>
-                <UserCard user={this.state.name} img={this.state.img} bio={this.state.bio} />
+                <UserCard user={this.state.name} img={this.state.img} location={this.state.location} profile={this.state.html_url} followers={this.state.followers} following={this.state.following} bio={this.state.bio} />
             </div>
         );
     }
