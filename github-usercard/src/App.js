@@ -1,30 +1,14 @@
 import React from 'react';
 import './App.css';
+import User from "./components/User";
 
-class App extends React.Component {
-  state = {
-    followers: []
-  };
-
-  componentDidMount() {
-    fetch("https://api.github.com/users/emilybruner")
-      .then(response => response.json())
-      .then(data => {
-        this.setState({ followers: data.message });
-      });
-  }
-
-
-  render() {
-    return (
-      <div>
-        <h2>Github UserCards</h2>
-      </div >
-    );
-  }
+function App() {
+  return (
+    <div>
+      <h1>github usercard</h1>
+      <User />
+    </div>
+  );
 }
-
-
-
 
 export default App;
