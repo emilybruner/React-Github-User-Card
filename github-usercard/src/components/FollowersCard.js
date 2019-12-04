@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FollowersCard = ({ followers, img, bio }) => {
+const FollowersCard = ({ followers, img }) => {
     return (
         <div>
             <img src={img} alt="user" />
